@@ -210,8 +210,8 @@ def train_model(
 
     bpds_kwargs = bpds_kwargs or {
         "buffer_size": 16,
-        "buffer_switch_interval": 2800,  # every 100 updates
-        "patch_shape": [32, 64, 64],
+        #"buffer_switch_interval": 2800,  # every 100 updates
+        "patch_size": [32, 64, 64],
     }
     dataset_train_kwargs = dataset_train_kwargs or {}
     dataset_val_kwargs = dataset_val_kwargs or {}
