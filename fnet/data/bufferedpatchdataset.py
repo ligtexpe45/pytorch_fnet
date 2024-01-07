@@ -13,7 +13,7 @@ class BufferedPatchDataset(FnetDataset):
     def __init__(self, 
                  dataset,
                  patch_size,
-                 patch_shape,
+                 patch_shape = None,
                  buffer_size = 1,
                  buffer_switch_frequency = 720, 
                  npatches = 100000,
