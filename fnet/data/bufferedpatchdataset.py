@@ -12,7 +12,8 @@ class BufferedPatchDataset(FnetDataset):
 
     def __init__(self, 
                  dataset,
-                 patch_size, 
+                 patch_size,
+                 patch_shape,
                  buffer_size = 1,
                  buffer_switch_frequency = 720, 
                  npatches = 100000,
@@ -21,7 +22,6 @@ class BufferedPatchDataset(FnetDataset):
                  shuffle_images = True,
                  dim_squeeze = None,
                  buffer_switch_interval = None,
-                 patch_shape
     ):
         
         self.counter = 0
