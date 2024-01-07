@@ -20,6 +20,7 @@ class BufferedPatchDataset(FnetDataset):
                  transform = None,
                  shuffle_images = True,
                  dim_squeeze = None,
+                 buffer_switch_interval = None
     ):
         
         self.counter = 0
